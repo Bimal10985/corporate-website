@@ -50,7 +50,8 @@ body {
 
 
 .navbar-collapse{
-    margin-left: 75px;
+    margin-left: 180px;
+    margin-top: -40px;
 }
 
 .nav-item a {
@@ -65,13 +66,12 @@ body {
 	text-align: center;
 
 }
-.navbar{
-    padding-left:150px;
-    margin-top: 180px;
-}
+ .navbar{
+   padding:0px
+} 
 .text{
     margin-top: 150px;
-    padding-left: 150px;
+    /* padding-left: 150px; */
     color: white;
     
 }
@@ -96,16 +96,17 @@ body {
 }
 .btn{
     margin-top: 100px;
-    margin-left: 150px;
+  
+    /* margin-left: 150px; */
 }
 .btn1{
     position: absolute;
     top: 40%;
-    left:-5%;
+    left:5%;
 }
 .btn2{
     position: absolute;
-    left: 80%;
+    left: 89%;
     top: 40%;
 }
 .shadows {
@@ -120,6 +121,14 @@ body {
   /* .legalPractice{
       background-color: rgb(173, 161, 161);
   } */
+  .firstRow h6{
+    text-transform: uppercase;
+    padding-top: 10px; 
+  }
+  .firstRow p{
+      font-size: small;
+      text-align: justify;
+  }
 .img2{
     height: 100px;
     width: 100px;
@@ -129,6 +138,29 @@ body {
 .reasons{
     background-color: rgb(245, 243, 237);
 }
+.reasons h2{
+    color: brown;
+}
+.reasons h6{
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.reasons p{
+    font-size: small;
+    text-align: justify;
+}
+.reasonsTitle p{
+    text-transform: uppercase;
+     text-align: center;
+      margin-bottom: 0px;
+}
+.reasonsTitle h3{
+    text-transform: uppercase;
+     text-align: center;
+      margin-bottom: 0px;
+}
+
 .helping{
     background-color: black;
     position: relative;
@@ -138,8 +170,7 @@ body {
 .helpingInside{
     background-color: rgb(23, 23, 43);
     width: 400px;
-    padding-left: 50px;
-    padding-top: 50px;
+    padding: 50px 50px 0 50px;
     position: absolute;
     left:20%;
     top: 30%;
@@ -149,7 +180,7 @@ body {
     font-size: 8px;
 }
 .number{
-    background-color: black;
+   
     position: absolute;
     top: 28%;
     left: 60%;
@@ -256,8 +287,14 @@ body {
   background-color: rgb(245, 243, 237) ;
 }
 .testimonialsPara p{
-    padding-left: 350px;
+    padding-left: 450px;
+    text-align: justify;
+    font-size: small;
    
+}
+.card-text{
+    font-size: small;
+    text-align: justify;
 }
 .testimonials-slider {
     
@@ -323,7 +360,7 @@ body {
     width: 20%;
     height: 40px;
     background-color: #f9ca24;
-    border-radius: 40px;
+    border-radius: 0 40px 40px 0;
     text-align: center;
     padding-top: 8px;
 }
@@ -333,7 +370,7 @@ body {
     /* padding-left: 30px;
     padding-top: 20px; */
 }
-.designFooter{
+/* .designFooter{
     display: flex;
     width: 100%;
     height: 400px;
@@ -356,8 +393,8 @@ body {
     margin-top: -190px;
     color: #2c3e50; ;
     margin-bottom: 20px;
-}
-.footer{
+}*/
+.footers{
     display: flex;
     width: 100%;
     height: 50px;
@@ -367,34 +404,60 @@ body {
 }
 .footerright{
     width: 20%;
-}
+} 
 .copyright1{
     font-size: 12px;
 }
 .footerright i{
     margin-left: 10px;
 }
+.designFooter1 h2{
+    color: #f9ca24;
+    font-weight: bold;
+}
+.firstpara{
+    color: #f9ca24;
+     margin-top: -12px;
+      font-size: 8px;
+}
 ul li{
     list-style: none;
+  
+}
+ul{
+    margin-top: 35px;
+    margin-left: 30px;
 }
 footer h5{
     font-weight: bold;
+    text-align: center;
 }
 footer p{
     font-size: 12px;
 }
-@media (max-width:1200px) {
+.designfooterlast1{
+    margin-left: 40px; 
+    margin-top: 35px;
+     font-size: 12px;
+}
+.designfooterlast2{
+    margin-left: 40px;
+     font-size: 12px;
+}
+/* @media (max-width:1200px) {
     .btn2{
         position: absolute;
         left: 65%;
         top: 40%;
+        display: none;
     }
     .btn1{
         position: absolute;
         left: -15%;
         top: 40%;
+        display: none;
     }
-}
+} */
 @media (max-width:768px){
     .topNavleft{
         font-size: 7px;
@@ -410,11 +473,13 @@ footer p{
         position: absolute;
         left: 64%;
         top: 40%;
+        display: none;
     }
     .btn1{
         position: absolute;
         left: -30%;
         top: 40%;
+        display: none;
     }
     .background-img{
         width: 100vw;
@@ -458,6 +523,7 @@ footer p{
     .helpingInside h6 {
        font-size: 9px;
     }
+
     /* .helpingInside helpingInsideDiv{
         width: 100px;
     } */
@@ -465,9 +531,9 @@ footer p{
         background-color: black;
         position: absolute;
         top: 28%;
-        left: 50%;
+        left: 60%;
         display: flex;
-        width: 40%;
+        width: 30%;
     }
     .number1{
         width: 20%;
@@ -502,60 +568,60 @@ footer p{
         width: 20%;
         height: 40%;
     }
-    /* .image11 img{
+     .image11 img{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        
+    }
+    .image12 img{
         height: 40px;
         width: 40px;
         border-radius: 50%;
         position: absolute;
-        left: 50px;
-        top: 20px;
-        
-    }
-    .image12 img{
-        height: 80px;
-        width: 80px;
-        border-radius: 50%;
-        position: absolute;
-        left: 20px;
-        top: 150px;
+        left: 15px;
+        top: 140px;
         
     }
     .image13 img{
-        height: 55px;
-        width: 55px;
+        height: 25px;
+        width: 25px;
         border-radius: 50%;
         position: absolute;
-        left:100px;
+        left:5px;
         top: 75px;
         
     }
     .image14 img{
-        height: 40px;
-        width: 40px;
+        height: 20px;
+        width: 20px;
         border-radius: 50%;
         position: absolute;
-        left: 1200px;
+        left: 500px;
         top: 20px;
         
     }
     .image15 img{
-        height: 80px;
-        width: 80px;
+        height: 40px;
+        width: 40px;
         border-radius: 50%;
         position: absolute;
-        left: 90px;
-        top: 75px;
+        left: 550px;
+        top: 100px;
         
     }
     .image16 img{
-        height: 55px;
-        width: 55px;
+        height: 30px;
+        width: 30px;
         border-radius: 50%;
         position: absolute;
-        left: 1200px;
+        left: 500px;
         top: 170px;
         
-    } */
+    } 
     .testimonialsPara p{
         padding-left: 50px;
         font-size: 11px;
